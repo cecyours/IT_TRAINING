@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            /* border-radius: 50%; */
+            animation-name: home;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            margin: 10px;
+            
+        }
+
+            #tag1{
+                animation-timing-function: ease-in;
+            }
+
+            #tag2{
+                animation-timing-function: ease-out;
+            }
+
+            #tag3{
+                animation-timing-function: ease-in-out;
+            }
+
+            #tag4{
+                animation-timing-function:ease-out;
+            }
+        @keyframes home{
+             
+            from{left:0px;}
+            to{left:90%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="tag1">
+        
+    </div>    
+
+    <div id="tag2">
+        
+    </div>  
+    <div id="tag3">
+        
+    </div>  
+    <div id="tag4">
+        
+    </div>  
+    
+</body>
+</html>
