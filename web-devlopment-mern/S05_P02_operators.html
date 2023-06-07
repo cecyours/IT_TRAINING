@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+    <style>
+        .btn {
+            margin: 10px;
+            padding: 5px 10px;
+        }
+
+        .form-control {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section style="margin: 100px;">
+
+        <input class="form-control" id="num1">
+        <input class="form-control" id="num2">
+        <button class="btn" id="btnPlus">+</button>
+        <button class="btn" id="btnExpo">**</button>
+        <div id="msg">
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+
+    var msg = document.getElementById("msg")
+
+    let n1 = document.getElementById("num1")
+    let n2 = document.getElementById("num2")
+
+    var btnPlus = document.getElementById("btnPlus")
+    btnPlus.onclick = function () {
+
+        msg.innerHTML += n1.value + " + " + n2.value + " = " + (n1.value + n2.value)+"<br>"
+
+        // action on +
+    }
+
+
+    var btnExpo = document.getElementById("btnExpo")
+    btnExpo.onclick = function () {
+
+
+        msg.innerHTML += n1.value + " ** " + n2.value + " = " + (n1.value ** n2.value)+"<br>"
+
+        // action on +
+    }
+</script>
