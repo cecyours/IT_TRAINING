@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <style>
+
+        :root{
+            --bg-color:#553355;
+            --fg-color:#efefef
+        }
+        
+        #my-section{
+            font-size: 20px;
+            width: 50%;
+            background-color: var(--bg-color);
+            color: var(--fg-color);
+            top:50%;
+            left: 50%;
+            transform: translate(50%,50%);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .error{
+            color: red;
+            filter: drop-shadow(1px 1px white);
+            float: right;
+        }
+        .form-control{
+            /* border: 1px solid red; */
+            color: whitesmoke;
+            background-color: transparent;
+        }
+        .form-control:focus{
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section id="my-section">
+
+        <form action="https://www.home.com" onsubmit="return valid()">
+            
+                <div class="mb-3"> 
+                    <label for="userName" class="form-label">User name</label>
+                    <span class="error" id="userNameError"></span>
+                    <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
+                </div>
+                
+                <div class="mb-3"> 
+                    <label for="userEmail" class="form-label">User Email</label>
+                    <span class="error" id="userEmailError"></span>
+                    <input type="text" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3"> 
+                    <label for="userPassword" class="form-label">User Password</label>
+                    <span class="error" id="userPasswordError"></span>
+                    <input type="text" class="form-control" id="userPassword" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3"> 
+                    <label for="userConfirmPassword" class="form-label">User Confirm Password</label>
+                    <span class="error" id="userConfirmPasswordError"></span>
+                    <input type="text" class="form-control" id="userConfirmPassword" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+             
+        </form>
+
+    </section>
+</body>
+<script>
+    var userName = document.getElementById("userName");
+    var userEmail = document.getElementById("userEmail");
+    var userPassword = document.getElementById("userPassword");
+    var userConfirmPassword = document.getElementById("userConfirmPassword");
+    
+    function valid()
+    {
+            // check any error
+
+            
+            var isError = false;
+            
+            if(userName.value=="")
+            {
+                isError = true;
+                document.getElementById("userNameError").innerHTML = "please,"
+                userName.style.border = "1px red solid"
+            }
+            if(userEmail.value=="")
+            {   
+                isError = true
+                document.getElementById("userEmailError").innerHTML = "please, enter email"
+                userEmail.style.border="1px red solid"
+            }
+            if(isError)
+                return  false;
+            return true
+            
+    }
+</script>
+</html>
