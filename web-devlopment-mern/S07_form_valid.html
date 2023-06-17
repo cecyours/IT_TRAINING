@@ -8,71 +8,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/main.css">
     <style>
-
-        :root{
-            --bg-color:#553355;
-            --fg-color:#efefef
+        :root {
+            --bg-color: #553355;
+            --fg-color: #efefef
         }
-        
-        #my-section{
+
+        #my-section {
             font-size: 20px;
             width: 50%;
             background-color: var(--bg-color);
             color: var(--fg-color);
-            top:50%;
+            top: 50%;
             left: 50%;
-            transform: translate(50%,50%);
+            transform: translate(50%, 50%);
             padding: 40px;
             border-radius: 10px;
         }
 
-        .error{
+        .error {
             color: red;
             filter: drop-shadow(1px 1px white);
             float: right;
         }
-        .form-control{
+
+        .form-control {
             /* border: 1px solid red; */
             color: whitesmoke;
             background-color: transparent;
         }
-        .form-control:focus{
+
+        .form-control:focus {
             background-color: transparent;
             color: white;
         }
     </style>
-    
+
 </head>
 
 <body>
     <section id="my-section">
 
         <form action="https://www.home.com" onsubmit="return valid()">
-            
-                <div class="mb-3"> 
-                    <label for="userName" class="form-label">User name</label>
-                    <span class="error" id="userNameError"></span>
-                    <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
-                </div>
-                
-                <div class="mb-3"> 
-                    <label for="userEmail" class="form-label">User Email</label>
-                    <span class="error" id="userEmailError"></span>
-                    <input type="text" class="form-control" id="userEmail" aria-describedby="emailHelp">
-                </div>
 
-                <div class="mb-3"> 
-                    <label for="userPassword" class="form-label">User Password</label>
-                    <span class="error" id="userPasswordError"></span>
-                    <input type="text" class="form-control" id="userPassword" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3"> 
-                    <label for="userConfirmPassword" class="form-label">User Confirm Password</label>
-                    <span class="error" id="userConfirmPasswordError"></span>
-                    <input type="text" class="form-control" id="userConfirmPassword" aria-describedby="emailHelp">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-             
+            <div class="mb-3">
+                <label for="userName" class="form-label">User name</label>
+                <span class="error" id="userNameError"></span>
+                <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">User Email</label>
+                <span class="error" id="userEmailError"></span>
+                <input type="text" class="form-control" id="userEmail" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="userPassword" class="form-label">User Password</label>
+                <span class="error" id="userPasswordError"></span>
+                <input type="text" class="form-control" id="userPassword" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="userConfirmPassword" class="form-label">User Confirm Password</label>
+                <span class="error" id="userConfirmPasswordError"></span>
+                <input type="text" class="form-control" id="userConfirmPassword" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
         </form>
 
     </section>
@@ -82,30 +83,89 @@
     var userEmail = document.getElementById("userEmail");
     var userPassword = document.getElementById("userPassword");
     var userConfirmPassword = document.getElementById("userConfirmPassword");
-    
-    function valid()
-    {
-            // check any error
 
-            
-            var isError = false;
-            
-            if(userName.value=="")
-            {
-                isError = true;
-                document.getElementById("userNameError").innerHTML = "please,"
-                userName.style.border = "1px red solid"
+    function valid() {
+        // check any error
+
+
+        var isError = false;
+
+        if (userName.value == "") {
+            isError = true;
+            document.getElementById("userNameError").innerHTML = "please,"
+            userName.style.border = "1px red solid"
+        }
+        if (userEmail.value == "" || isNotValidEmail(userEmail.value)) {
+            isError = true
+            document.getElementById("userEmailError").innerHTML = "please, enter valid email"
+            userEmail.style.border = "1px red solid"
+        }
+        if (userPassword.value == "") {
+            isError = true
+            document.getElementById("userPasswordError").innerHTML = "please, enter password"
+            userPassword.style.border = "1px red solid"
+        }
+
+        if (userConfirmPassword.value == "") {
+            isError = true
+            document.getElementById("userConfirmPasswordError").innerHTML = "please, enter userConfirmPassword"
+            userConfirmPassword.style.border = "1px red solid"
+        }
+        if (isError)
+            return false;
+        return true
+
+    }
+
+    userConfirmPassword.oninput = function () {
+
+        if (userConfirmPassword.value == userPassword.value) {
+            userConfirmPassword.style.color = "green"
+            userConfirmPassword.style.textShadow = "1px 1px white"
+
+        }
+        else {
+            if (userPassword.value.startsWith(userConfirmPassword.value)) {
+                userConfirmPassword.style.color = "green"
+                userConfirmPassword.style.textShadow = "1px 1px white"
+
             }
-            if(userEmail.value=="")
-            {   
-                isError = true
-                document.getElementById("userEmailError").innerHTML = "please, enter email"
-                userEmail.style.border="1px red solid"
+            else {
+                userConfirmPassword.style.textShadow = "none"
+
+                userConfirmPassword.style.color = "red"
             }
-            if(isError)
-                return  false;
-            return true
-            
+
+        }
+    }
+
+    userName.onfocus = function () {
+        removeError("userName");
+    }
+
+    userEmail.onfocus = function () {
+        removeError("userEmail")
+    }
+
+    userPassword.onfocus = function () {
+        removeError("userPassword")
+    }
+
+    userConfirmPassword.onfocus = function () {
+        removeError("userConfirmPassword")
+    }
+    function removeError(id) {
+        document.getElementById(id + "Error").innerHTML = ""
+        document.getElementById(id).style.border = "1px white solid"
+    }
+
+    function isNotValidEmail(emailId) {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.]+(?:.[a-zA-Z0-9-]+)*$/;
+
+        return !emailId.match(validRegex)
     }
 </script>
+
 </html>
+<!-- user@domain.com -->
+<!-- parth@cecyours.org -->
