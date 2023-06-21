@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+
+        <div id="output">
+
+        </div>
+
+    </section>
+</body>
+
+</html>
+<script>
+    const Book1 = {
+        bookName:"ek thi kahani",
+        bookAuthor:'gk',
+        bookPrice:500,
+        edition:1,
+        getBill:function(){
+            return this.bookName+", "+this.bookAuthor+", "+this.bookPrice+", "+this.edition
+        }
+    }
+
+    const Book2 = {
+        bookName:"Sample World",
+        bookAuthor:'vivek',
+        bookPrice:990,
+        edition:2,
+        getBill:function(){
+            return this.bookName+", "+this.bookAuthor+", "+this.bookPrice+", "+this.edition
+        }
+    }
+
+    var output = document.getElementById("output")
+
+    
+
+    output.innerHTML = Book1.getBill()+" <hr> "+Book2.getBill();
+</script>

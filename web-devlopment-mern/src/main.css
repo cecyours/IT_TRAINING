@@ -100,6 +100,7 @@ h1 {
     }
 }
 
+
 .h2,
 h2 {
     font-size: calc(1.325rem + .9vw)
@@ -11720,3 +11721,14 @@ fieldset:disabled .btn {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+/* custom css */
+
+.form-control{
+    margin: 10px;
+}
+
+.btn-primary{
+    
+    padding: 10px 30px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+
+        <div id="output">
+
+        </div>
+        <input type="text" placeholder="expression" id="expression" class="form-control">
+
+        <div style="text-align: center;">
+            <button class="btn btn-primary" id="btnPlus">+ </button>
+            <button class="btn btn-primary" id="btnMinus"> - </button>
+            <button class="btn btn-primary" id="btnMulplication"> x </button>
+            <button class="btn btn-primary" id="btnDivision"> / </button>
+            <button class="btn btn-primary" id="btnModule"> % </button>
+
+
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+    var currentValue = 0
+    var output = document.getElementById("output")
+    var expression = document.getElementById("expression")
+    document.getElementById("btnPlus").onclick = function () {
+
+        currentValue = currentValue + parseInt(expression.value)
+        output.innerHTML = currentValue;
+        expression.value = ""
+
+    }
+    document.getElementById("btnMinus").onclick = function () {
+
+        currentValue = currentValue - parseInt(expression.value)
+        output.innerHTML = currentValue;
+        expression.value = ""
+
+    }
+</script>

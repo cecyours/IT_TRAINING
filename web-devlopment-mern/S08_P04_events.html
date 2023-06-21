@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+</head>
+
+<body id="sample">
+
+    <section style="margin: 100px;">
+        <div id="section" style="width: 100px;height: 100px;background: blue;">
+
+        </div>
+        <input type="color" class="form-control" id="color_set">
+
+        <div id="output">
+
+        </div>
+
+    </section>
+</body>
+
+</html>
+<script>
+    document.getElementById("color_set").oninput = () => {
+
+        var clr = document.getElementById("color_set")
+        console.log(clr.value);
+        document.getElementById("sample").style.background = clr.value
+        // alert("sdfds")
+    }
+    
+    document.getElementById("section").onmouseenter = function(){
+        document.getElementById("section").style.borderRadius = "50%"
+        document.getElementById("output").innerHTML = "onmouseenter"
+
+    }
+
+    document.getElementById("section").onmouseout = function(){
+        document.getElementById("section").style.borderRadius = "0%"
+        document.getElementById("output").innerHTML = "mouseout"
+    }
+    document.getElementById("section").onmouseup = function(){
+        document.getElementById("section").style.borderRadius = "0%"
+        document.getElementById("output").innerHTML = "onmouseup"
+    }
+    
+    window
+    .onload = function(){
+        alert("hi");
+    }
+
+</script>
