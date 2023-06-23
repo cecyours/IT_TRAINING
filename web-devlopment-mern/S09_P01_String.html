@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+        <input type="text" id="text_data" value="Hello World" class="form-control">
+
+        <div id="output"></div>
+    </section>
+</body>
+
+</html>
+
+<script>
+
+    var text = document.getElementById('text_data')
+    var output = document.getElementById('output')
+  
+
+        output.innerHTML = ""
+        output.innerHTML += text.value.length+"<hr>"
+        output.innerHTML += text.value.slice(1,5)+"<hr>"
+        output.innerHTML += text.value.substring(4,6)+"<hr>"
+        output.innerHTML += text.value.replaceAll('l','-')+"<hr>"
+   
+        var fname = "Khaatu"
+        var lname = "jadu  "
+
+        var fullname = fname.concat(" ".concat(lname));
+        output.innerHTML += fullname+"<hr>"
+        output.innerHTML += fullname.length+"<hr>"
+        output.innerHTML += fullname.trim().length+"<hr>"
+        output.innerHTML += fullname.trimStart().length+"<hr>"
+        output.innerHTML += fullname.trimEnd().length+"<hr>"
+        output.innerHTML += fullname.charAt(2)+"<hr>"
+        output.innerHTML += fullname.charCodeAt(2)+"<hr>"
+        
+        fullname = '1200.'
+        output.innerHTML += fullname.padStart(10,'x')+"<hr>"
+        output.innerHTML += fullname.padEnd(10,'x')+"<hr>"
+
+        var line = "Hello There, how are you, khana kha ke jaana."
+        var words = line.split(' ')
+        
+        // output.innerHTML + = " s ";
+</script>
