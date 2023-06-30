@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+        <input type="text" id="text_data" value="" class="form-control">
+        <button class="btn btn-primary" onclick="add()">Add</button>
+
+        <div id="output"></div>
+    </section>
+</body>
+
+</html>
+
+<script>
+
+    var users = ["Krishan", "Mohan", "Ramesh"]
+    var output = document.getElementById("output")
+    var text_data = document.getElementById("text_data");
+
+    for (var x in users) {
+        output.innerHTML += users[x] + "<br>";
+    }
+    output.innerHTML += "<hr>"
+    var l = users.length;
+
+    output.innerHTML += l + " is length<br>"
+    
+    
+    function add() {
+        // alert(text_data.value)
+        users.push(text_data.value)
+        var l = users.length;
+        output.innerHTML = ""
+        for (var i = 0; i < l; i++) {
+            output.innerHTML += users[i] + "<br>"
+        }
+    }
+</script>
