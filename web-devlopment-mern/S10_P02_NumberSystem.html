@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+        <!-- <input type="text" id="text_data" value="Hello World" class="form-control"> -->
+
+        <div id="output"></div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var x = 1299.672;
+    var y = x.toString();
+    var output = document.getElementById("output")
+
+    output.innerHTML += x.toString()+"<hr>";
+    output.innerHTML += x.toExponential()+"<hr>";
+    output.innerHTML += x.toPrecision(5)+"<hr>";
+    output.innerHTML += x.toFixed(4)+"<hr>";
+    output.innerHTML += y.valueOf()+"<hr>";
+    output.innerHTML += Number.MAX_VALUE+"<hr>";
+
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+
+</head>
+
+<body>
+
+    <section style="margin: 100px;">
+        <!-- <input type="text" id="text_data" value="Hello World" class="form-control"> -->
+
+        <div id="output"></div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var username = 'Raju'
+    var money = '40 lakh'
+    var days = 25
+    var temp = `Hello ${username}, how are ${username}, give me back my ${money} after ${days} days.`
+    var temp2 = "Hello "+username+", how are "+username+", give me back my "+`${money}`+" after "+days+" days."
+    document.getElementById("output").innerHTML = temp2+"<hr>"+temp
+</script>
