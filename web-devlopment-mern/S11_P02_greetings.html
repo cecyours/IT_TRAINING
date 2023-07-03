@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        #msg {
+            font-size: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+        <div id="msg">
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var msg = document.getElementById("msg")
+    const d = new Date("July 21, 2023 20:31:00");
+
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+
+    msg.innerHTML = hours + " : " + minutes + "<hr>"
+
+    if (hours < 12) {
+        msg.innerHTML += "Good Morning.."
+    }
+    if (hours >= 12 && hours <= 14) {
+
+        if(minutes<=30 && hours==14 || hours<=13)
+            msg.innerHTML += "Good Noon"
+        
+    }
+
+    if(hours==14 && minutes>30)
+    {
+        msg.innerHTML += "Good After Noon"     
+    }
+    else if(hours>14 && hours<17)
+    {
+        msg.innerHTML += "Good After Noon"     
+    }
+
+    else if(hours>=17 && hours<20)
+    {
+        
+        msg.innerHTML += "Good Evening Noon"     
+
+    }
+    else if(hours>=20)
+    {
+        msg.innerHTML += "Good Night.."
+    }
+    
+
+</script>
