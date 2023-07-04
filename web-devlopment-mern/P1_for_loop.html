@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <section style="margin: 100px;">
+        <input type="text" class="form-control">
+        <div id="output">
+
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    var output = document.getElementById("output")
+    var car = ["Volvo","Scoda","Fiat"]
+    var fruits = ["Apples","Bananas","Oranges"]
+
+    for(var x in car){
+        console.log(car[x])
+    }
+    for(var x of fruits){
+        output.innerHTML += x+"<br>"
+    }
+</script>

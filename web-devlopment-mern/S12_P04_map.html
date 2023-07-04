@@ -21,7 +21,8 @@
 <body id="home">
     <section style="margin: 100px;">
 
-        <input class="form-control" type="text"  id="name" />
+        <input class="form-control" type="text" id="name" />
+        <input class="form-control" type="number" id="marks" />
         <button class="btn" onclick="add()" style="font-size: 50px;">+</button>
         <div id="msg">
 
@@ -33,28 +34,31 @@
 
 <script>
     var msg = document.getElementById("msg")
-    var car = new Set(["Volvo", "Scoda", "Pfiat", "Scodax"])
-    var name = document.getElementById("name")
-    function loadList() {
+
+    var record = new Map(
+        [
+            ['kuldip', 100],
+            ['mohan', 70],
+        ]
+    )
+
+    function loadRecord() {
         msg.innerHTML = ""
-        
-        for (var x of car) {
-            msg.innerHTML+= x+"<br>"
-        }
+        record.forEach((k,i) => {
+            msg.innerHTML += i+" : "+k+"<br>"
+        });
     }
 
     function add()
     {
+        var username = document.getElementById("name").value
+        var marks = document.getElementById("marks").value
 
-        var value = document.getElementById("name").value
-
-        // alert(value)
-        if(value!="")
+        if(marks!="" && username!="")
         {
-            car.add(value)
+            record.set(username,marks)
         }
-        loadList();
+        loadRecord()
     }
-    loadList();
-
+    loadRecord();
 </script>
