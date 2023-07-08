@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        #msg {
+            font-size: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+        <p id="amount"></p>
+        <input type="number" class="form-control" id="num">
+        <button class="btn" onclick="operate()">withdraw</button>
+        <div id="msg">
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var msg = document.getElementById("msg")
+    var amount = document.getElementById("amount");
+    amount.innerHTML = 1000
+    function operate(){
+        
+        var num = document.getElementById("num").value
+
+        var balance = parseFloat(amount.innerHTML)
+
+        try{
+
+            if(balance-num<0)
+                throw "-ve balance.."
+
+            balance = balance-num
+            amount.innerHTML = balance
+        }
+        catch(err)
+        {   
+            msg.innerHTML = err
+        }
+            
+
+
+    }
+</script>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        #msg {
+            font-size: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+        <input type="number" class="form-control" id="num1">
+        <input type="number" class="form-control" id="num2">
+        <button class="btn" onclick="operate()">/</button>
+        <div id="msg">
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var msg = document.getElementById("msg")
+   
+    function operate(){
+        var num1 = document.getElementById("num1").value
+        var num2 = document.getElementById("num2").value
+
+        try{
+            if(num2==0)
+                throw "Jaane be.."
+                
+            var num3 = num1/num2
+            msg.innerHTML = num3;
+        }
+        catch(err)
+        {
+            console.log(err)
+        }
+
+
+    }
+</script>

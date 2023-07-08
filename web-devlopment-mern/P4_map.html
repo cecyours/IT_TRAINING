@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <section style="margin: 100px;">
+        
+        <input type="text" id="name" class="form-control">
+        <input type="number" id="marks" class="form-control">
+        <button class="btn btn-success" onclick="add()" style="font-size: 30px;">+</button>
+        <div id="output">
+
+        </div>
+
+    </section>
+</body>
+</html>
+
+<script>
+    var output = document.getElementById("output")
+
+    var record = new Map(
+        [
+            ["Vivek",90],
+            ["Kuldeep",95]
+        ]
+        )
+
+    function loadRecord() {
+        output.innerHTML = ""
+        record.forEach((k,i) => {
+            output.innerHTML += i+" : "+k+"<br>"
+        });
+    }
+
+    function add(){
+        var username = document.getElementById("name").value
+        var marks = document.getElementById("marks").value
+
+        if(marks!="" && username!="")
+        {
+            record.set(username,marks)
+        }
+        loadRecord()
+    }
+    loadRecord();
+</script>
