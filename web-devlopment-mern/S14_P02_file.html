@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/main.css"/>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 200px;
+            /* width: 100%; */
+            object-fit: cover;
+        }
+        .card-img-top:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="output" class="grid-container" style="margin: 100px;"></div>
+</body> 
+<script type="module">
+    import data from './S14_P02.js'
+
+    const products = data.products;
+    const outputDiv = document.getElementById("output");
+
+    products.forEach(product => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        cardDiv.style.width = "18rem";
+
+        const imageElement = document.createElement("img");
+        imageElement.src = product.image;
+        imageElement.className = "card-img-top";
+        imageElement.alt = "not found";
+
+        const cardBodyDiv = document.createElement("div");
+        cardBodyDiv.className = "card-body";
+
+        const titleElement = document.createElement("h5");
+        titleElement.className = "card-title";
+        titleElement.textContent = product.name;
+
+        const descElement = document.createElement("p");
+        descElement.className = "card-text";
+        descElement.textContent = product.desc;
+
+        const buttonElement = document.createElement("a");
+        buttonElement.className = "btn btn-primary";
+        buttonElement.href = "#";
+        buttonElement.textContent = "Go somewhere";
+
+        cardBodyDiv.appendChild(titleElement);
+        cardBodyDiv.appendChild(descElement);
+        cardBodyDiv.appendChild(buttonElement);
+
+        cardDiv.appendChild(imageElement);
+        cardDiv.appendChild(cardBodyDiv);
+
+        outputDiv.appendChild(cardDiv);
+    });
+</script>
+</html>
