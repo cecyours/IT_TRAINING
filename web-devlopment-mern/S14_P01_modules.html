@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        #msg {
+            font-size: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+
+
+        <div id="msg">
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script type="module">
+    import Student from './S14_P01_my_mod.js'
+  
+    var msg = document.getElementById("msg")
+
+    
+    var s1 = new Student("Manish",90)
+    var s2 = new Student("Rio",56)
+    var s3 = new Student("Methi",74)
+    var s4 = new Student("Pravin",71)
+    var s5 = new Student("mihir",72)
+
+    var data = [s1,s2,s3,s4,s5]
+
+
+    for(var i=0;i<data.length;i++)
+    {
+        for(var j=i+1;j<data.length;j++)
+        {
+            if(data[i].get()<data[j].get())
+            {
+                var temp = data[i]
+                data[i] = data[j]
+                data[j] = temp
+                // console.log("hii")
+            }
+        }
+    }
+
+    for(var x of data)
+    {
+        console.log(x)
+    }
+    
+</script>
