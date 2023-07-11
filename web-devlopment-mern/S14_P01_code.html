@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        #msg {
+            font-size: 40px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+
+
+        <div id="msg">
+            <p id="ques">sdfds</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p1" value="option1" >
+                <label class="form-check-label" id="l1" for="p1">
+
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p2" value="option1" >
+                <label class="form-check-label" id="l2" for="p2">
+
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p3" value="option1" >
+                <label class="form-check-label" id="l3" for="p3">
+
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="p1" id="p4" value="option1" >
+                <label class="form-check-label" id="l4" for="p4">
+
+                </label>
+            </div>
+
+            <button class="btn" id="btnNext">Next</button>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script type="module">
+    import questions from './S15_P01_mod.js'
+    var index = 0
+    var msg = document.getElementById("msg")
+
+    var ques = document.getElementById("ques");
+
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementById("p2");
+    var p3 = document.getElementById("p3");
+    var p4 = document.getElementById("p4");
+
+
+    var l1 = document.getElementById("l1");
+    var l2 = document.getElementById("l2");
+    var l3 = document.getElementById("l3");
+    var l4 = document.getElementById("l4");
+
+
+    function loadNext() {
+
+        console.log(index+" clicked ===")
+        if(index==questions.length)
+        {
+            console.log("game over")
+            return;
+        }
+        
+        
+        var data = questions[index];
+        ques.innerHTML = (index+1)+". "+data.Questions
+
+        p1.checked = false;
+        p2.checked = false;
+        p3.checked = false;
+        p4.checked = false;
+
+        l1.innerHTML = data.OptionA
+        l2.innerHTML = data.OptionB
+        l3.innerHTML = data.OptionC
+        l4.innerHTML = data.OptionD
+
+
+        index++;
+    }   
+
+    loadNext()
+
+    document.getElementById("btnNext").onclick = function(){
+        loadNext()
+    }
+
+</script>
