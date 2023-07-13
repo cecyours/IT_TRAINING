@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main.js"></script>
+    <script src="src/main-jq.js"></script>
+
+    <style>
+        
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            
+            var dataJson;
+            $.ajax({
+            url: './code.json',
+            dataType: 'json',
+            success: function(data) {
+                // The 'data' variable will contain the JSON response from the API
+                // You can process the data here
+                console.log(data);
+                dataJson = data
+            },
+            error: function(xhr, status, error) {
+                // Handle any errors that occur during the request
+                console.log('Error:', error);
+            }
+            });
+
+            var index=0
+            $("#btnNext").click(function(){
+
+                var node = dataJson[index++]
+                $("p").text(node.Questions);
+            })
+
+        })  
+    </script>
+</head>
+<body>
+    <section style="margin: 100px;">
+            <p>Hello</p>
+
+            <button id="btnNext">next</button>
+    </section>
+</body>
+</html>

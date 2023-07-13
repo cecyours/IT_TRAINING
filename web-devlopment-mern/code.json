@@ -1,0 +1,954 @@
+[
+    {
+     "Questions": "Which of the following is not a programming language?",
+     "OptionA": "C",
+     "OptionB": "C++",
+     "OptionC": "Java ",
+     "OptionD": "XML",
+     "Correct Answer with Description": "XML"
+    },
+    {
+     "Questions": "Which of the following is not a loop?",
+     "OptionA": "for",
+     "OptionB": "while",
+     "OptionC": "if..then…else",
+     "OptionD": "do…while",
+     "Correct Answer with Description": "if..then..else"
+    },
+    {
+     "Questions": "What kind of representation is a flowchart?",
+     "OptionA": "Tabular",
+     "OptionB": "Graphical ",
+     "OptionC": "Digital",
+     "OptionD": "Textual",
+     "Correct Answer with Description": "Graphical"
+    },
+    {
+     "Questions": "What does the diamond box mean in a flowchart?",
+     "OptionA": "Decision",
+     "OptionB": "Action\/Process",
+     "OptionC": "Input\/Output",
+     "OptionD": "Start\/End",
+     "Correct Answer with Description": "Decision"
+    },
+    {
+     "Questions": "Which of the following programming languages does not use data types?",
+     "OptionA": "C Language",
+     "OptionB": "Java",
+     "OptionC": "C++",
+     "OptionD": "B Language",
+     "Correct Answer with Description": "B Language"
+    },
+    {
+     "Questions": "Which of the following codes is generally used by code editors?",
+     "OptionA": "Binary Code ",
+     "OptionB": "Source Code",
+     "OptionC": "Machine Code",
+     "OptionD": "Object Code",
+     "Correct Answer with Description": "Source Code"
+    },
+    {
+     "Questions": "Which of the following is an intermediate code?",
+     "OptionA": "Binary Code ",
+     "OptionB": "Source Code",
+     "OptionC": "Machine Code",
+     "OptionD": "Object Code",
+     "Correct Answer with Description": "Object Code"
+    },
+    {
+     "Questions": "What is the extension for an executable file?",
+     "OptionA": ".c",
+     "OptionB": ".obj",
+     "OptionC": ".exe",
+     "OptionD": ".cpp",
+     "Correct Answer with Description": ".exe"
+    },
+    {
+     "Questions": "Which of the following is responsible for converting a source code into a machine code?",
+     "OptionA": "Compiler",
+     "OptionB": "Linker",
+     "OptionC": "Editor",
+     "OptionD": "IDE",
+     "Correct Answer with Description": "Compiler"
+    },
+    {
+     "Questions": "What is the correct syntax for a main function?",
+     "OptionA": "Void Main()",
+     "OptionB": "void main()",
+     "OptionC": "Void main()",
+     "OptionD": "void main();",
+     "Correct Answer with Description": "void main()"
+    },
+    {
+     "Questions": "The link section provides information about _______________ to the compiler. ",
+     "OptionA": "built in library functions",
+     "OptionB": "user defined data variables",
+     "OptionC": "global variables",
+     "OptionD": "user defined functions",
+     "Correct Answer with Description": "built in library functions"
+    },
+    {
+     "Questions": "Which of the following is wrong in context of C?",
+     "OptionA": "Functional language",
+     "OptionB": "Structured language",
+     "OptionC": "Object oriented language",
+     "OptionD": "Case sensitive",
+     "Correct Answer with Description": "Object oriented language"
+    },
+    {
+     "Questions": "ISO adopted ANSI C in the year _______ to develop ANSI\/ISO C.",
+     "OptionA": 1988,
+     "OptionB": 1990,
+     "OptionC": 1972,
+     "OptionD": 1983,
+     "Correct Answer with Description": 1990
+    },
+    {
+     "Questions": "What kind of data does the character set contain?",
+     "OptionA": "Digits",
+     "OptionB": "Alphabets",
+     "OptionC": "Whitespaces",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "All of the above"
+    },
+    {
+     "Questions": "Which of the following is not a token?",
+     "OptionA": "Keywords",
+     "OptionB": "Comments",
+     "OptionC": "Strings",
+     "OptionD": "Operators",
+     "Correct Answer with Description": "Comments"
+    },
+    {
+     "Questions": "Which of the following is not an identifier?",
+     "OptionA": "Alphabets",
+     "OptionB": "Digits",
+     "OptionC": "Whitespaces",
+     "OptionD": "Underscore",
+     "Correct Answer with Description": "Whitespaces"
+    },
+    {
+     "Questions": "How many keywords does the ANSI C support?",
+     "OptionA": 16,
+     "OptionB": 32,
+     "OptionC": 64,
+     "OptionD": 8,
+     "Correct Answer with Description": 32
+    },
+    {
+     "Questions": "Which of the following are used for comments?",
+     "OptionA": "\\ and -",
+     "OptionB": "? and ^",
+     "OptionC": "# and $",
+     "OptionD": "\/\/ and \/* ,*\/",
+     "Correct Answer with Description": "\/\/ and \/* ,*\/"
+    },
+    {
+     "Questions": "Which of the following is a user-defined data type?",
+     "OptionA": "typedef int Boolean;",
+     "OptionB": "typedef enum{Mon, Tue, Thu}",
+     "OptionC": "struct{char name[10], int age}",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "All of the above"
+    },
+    {
+     "Questions": " What is the size of an int data type?",
+     "OptionA": "4 Bytes",
+     "OptionB": "8 Bytes",
+     "OptionC": "Depends on the system\/compiler",
+     "OptionD": "Cannot be determined",
+     "Correct Answer with Description": "Depends on the system\/compiler"
+    },
+    {
+     "Questions": "What is short int?",
+     "OptionA": "Basic data type of C",
+     "OptionB": "Qualifier",
+     "OptionC": "Short is the qualifier and int is the basic data type",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "Short is the qualifier and int is the basic data type"
+    },
+    {
+     "Questions": "Which of the following is not a reserved keyword for C?",
+     "OptionA": "auto",
+     "OptionB": "case",
+     "OptionC": "default",
+     "OptionD": "main",
+     "Correct Answer with Description": "main"
+    },
+    {
+     "Questions": "For which of the following data types is the format specifier '%i' used?",
+     "OptionA": "char",
+     "OptionB": "signed int",
+     "OptionC": "float ",
+     "OptionD": "double",
+     "Correct Answer with Description": "signed int"
+    },
+    {
+     "Questions": "A variable of C cannot start with ____________________ .",
+     "OptionA": "a number",
+     "OptionB": "a special symbol other than underscore",
+     "OptionC": "Both A & B",
+     "OptionD": "an alphabet",
+     "Correct Answer with Description": "Both A & B"
+    },
+    {
+     "Questions": "Which of the following functions should be there in all C programs?",
+     "OptionA": "start()",
+     "OptionB": "system()",
+     "OptionC": "main()",
+     "OptionD": "printf()",
+     "Correct Answer with Description": "main()"
+    },
+    {
+     "Questions": "Which of the following statements is false?",
+     "OptionA": "Constant variables need not be defined as they are declared and can be defined later",
+     "OptionB": "Global constant variables are initialised to zero",
+     "OptionC": " const keyword is used to define constant values",
+     "OptionD": "You cannot reassign a value to a constant variable",
+     "Correct Answer with Description": "Constant variables need not be defined as they are declared and can be defined later"
+    },
+    {
+     "Questions": "Which of the following functions is not a part of stdio.h header file?",
+     "OptionA": "printf();",
+     "OptionB": "fopen();",
+     "OptionC": "scanf();",
+     "OptionD": "strrev();",
+     "Correct Answer with Description": "strrev();"
+    },
+    {
+     "Questions": "What is the correct format for including a header file?",
+     "OptionA": "#include<file_name>",
+     "OptionB": "#include(file_name)",
+     "OptionC": "\/\/include<file_name>",
+     "OptionD": "#include\"file_name\";",
+     "Correct Answer with Description": "#include<file_name>"
+    },
+    {
+     "Questions": "scanf() is a\/an __________________ .",
+     "OptionA": "unformatted input function",
+     "OptionB": "formatted input function",
+     "OptionC": "unformatted output function",
+     "OptionD": "formatted output function",
+     "Correct Answer with Description": "formatted input function"
+    },
+    {
+     "Questions": "Select the odd one out.",
+     "OptionA": "putchar();",
+     "OptionB": "putch();",
+     "OptionC": "gets();",
+     "OptionD": "scanf();",
+     "Correct Answer with Description": "scanf()"
+    },
+    {
+     "Questions": "Which of the following is not an escape sequence character?",
+     "OptionA": "\\n",
+     "OptionB": "\\t",
+     "OptionC": "\\d",
+     "OptionD": "\\f",
+     "Correct Answer with Description": "\\d"
+    },
+    {
+     "Questions": "Which of the following symbols is used as a new line character?",
+     "OptionA": "\\L",
+     "OptionB": "\\N",
+     "OptionC": "\\n",
+     "OptionD": "\\t",
+     "Correct Answer with Description": "\\n"
+    },
+    {
+     "Questions": "Which of the following functions is a format specific (formatted I\/O) function?",
+     "OptionA": "puts();",
+     "OptionB": "scanf();",
+     "OptionC": "gets();",
+     "OptionD": "getchar();",
+     "Correct Answer with Description": "scanf();"
+    },
+    {
+     "Questions": "Which of the following functions leaves the echo of the pressed character?",
+     "OptionA": "getch();",
+     "OptionB": "putchar();",
+     "OptionC": "putch();",
+     "OptionD": "getche();",
+     "Correct Answer with Description": "getche();"
+    },
+    {
+     "Questions": "Which of the following is not an arithmetic operation?",
+     "OptionA": "a*=10",
+     "OptionB": "a\/=10",
+     "OptionC": "a!=10",
+     "OptionD": "a%=10",
+     "Correct Answer with Description": "a!=10"
+    },
+    {
+     "Questions": "Which of the following data types will throw an error on modulus operation?",
+     "OptionA": "char",
+     "OptionB": "short",
+     "OptionC": "int",
+     "OptionD": "float",
+     "Correct Answer with Description": "float"
+    },
+    {
+     "Questions": "Which operators perform operations on data at binary level?",
+     "OptionA": "Logical operator",
+     "OptionB": "Bitwise operator",
+     "OptionC": "Additional operators",
+     "OptionD": "Relational operators",
+     "Correct Answer with Description": "Bitwise operator"
+    },
+    {
+     "Questions": "The operator '&' is used for _________________.",
+     "OptionA": "bitwise AND",
+     "OptionB": "bitwise OR",
+     "OptionC": "logical AND",
+     "OptionD": "logical OR",
+     "Correct Answer with Description": "bitwise AND"
+    },
+    {
+     "Questions": "Are logical operators sequence points?",
+     "OptionA": true,
+     "OptionB": false,
+     "OptionC": "Depends on the compiler",
+     "OptionD": "Depends on the standard",
+     "Correct Answer with Description": true
+    },
+    {
+     "Questions": "In the expression: i=g()+f(), the first function that will be called is determined by _____________________ .",
+     "OptionA": "compiler",
+     "OptionB": "associativity of () operator",
+     "OptionC": "precedence of () and + operator",
+     "OptionD": "left to right of the expression",
+     "Correct Answer with Description": "compiler"
+    },
+    {
+     "Questions": "Associativity of an operator is _____________________.",
+     "OptionA": "right to left",
+     "OptionB": "left to right",
+     "OptionC": "decided by the compiler",
+     "OptionD": "precedence of the variable",
+     "Correct Answer with Description": "decided by the compiler"
+    },
+    {
+     "Questions": "Which of the following operators has the lowest precedence?",
+     "OptionA": "!=",
+     "OptionB": "&&",
+     "OptionC": "?:",
+     "OptionD": ",",
+     "Correct Answer with Description": ","
+    },
+    {
+     "Questions": "What is the correct expression for an if-else statement?",
+     "OptionA": "if (condition) { statement} else { statement }",
+     "OptionB": "if (condition); { statement} else { statement }",
+     "OptionC": "if (condition) { statement} else { statement };",
+     "OptionD": "if (condition) { statement}; else { statement };",
+     "Correct Answer with Description": "if (condition) { statement} else { statement }"
+    },
+    {
+     "Questions": "Which of the following is not a keyword used for decision making in conditional programming?",
+     "OptionA": "if  ",
+     "OptionB": "else",
+     "OptionC": "else if",
+     "OptionD": "for",
+     "Correct Answer with Description": "for"
+    },
+    {
+     "Questions": "Which of the following keywords is used to terminate a switch case?",
+     "OptionA": "default",
+     "OptionB": "break",
+     "OptionC": "end",
+     "OptionD": "jump",
+     "Correct Answer with Description": "break"
+    },
+    {
+     "Questions": "Which keyword is not associated with switch statements?",
+     "OptionA": "break",
+     "OptionB": "default",
+     "OptionC": "switch",
+     "OptionD": "main",
+     "Correct Answer with Description": "main"
+    },
+    {
+     "Questions": "Select the odd one out.",
+     "OptionA": "switch",
+     "OptionB": "else if",
+     "OptionC": "?:",
+     "OptionD": "while",
+     "Correct Answer with Description": "while"
+    },
+    {
+     "Questions": "What is the correct syntax for ?: operator?",
+     "OptionA": "Expression1? Expression 2: Expression 3”",
+     "OptionB": "Expression1? Expression 2? Expression 3”",
+     "OptionC": "Expression1? Expression 2: Expression 3:”",
+     "OptionD": "Expression1? Expression 2; Expression 3”",
+     "Correct Answer with Description": "Expression1? Expression 2; Expression 3”"
+    },
+    {
+     "Questions": "Which of the following cannot be used as LHS of the given expression: for(exp1;exp2;exp3)?",
+     "OptionA": "Variable",
+     "OptionB": "Function",
+     "OptionC": "typedef",
+     "OptionD": "Macros",
+     "Correct Answer with Description": "Macros"
+    },
+    {
+     "Questions": "What is an example of iteration in C?",
+     "OptionA": "for ",
+     "OptionB": "while",
+     "OptionC": "do…while",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "All of the above"
+    },
+    {
+     "Questions": "Which of the following loops is most suitable to perform an operation and test its condition?",
+     "OptionA": "for loop",
+     "OptionB": "while loop",
+     "OptionC": "do…while loop",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "do..while loop"
+    },
+    {
+     "Questions": "Which of the following keywords can be used to come out of recursion?",
+     "OptionA": "break",
+     "OptionB": "return",
+     "OptionC": "exit",
+     "OptionD": "continue",
+     "Correct Answer with Description": "return"
+    },
+    {
+     "Questions": "The keyword 'break' cannot be used within __________________ .",
+     "OptionA": "do..while",
+     "OptionB": "if-else",
+     "OptionC": "for",
+     "OptionD": "while",
+     "Correct Answer with Description": "if-else"
+    },
+    {
+     "Questions": "Which keyword can be used for coming out of loop only for that iteration?",
+     "OptionA": "break",
+     "OptionB": "continue",
+     "OptionC": "return",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "continue"
+    },
+    {
+     "Questions": "Can goto be used to jump from main() to within a function?",
+     "OptionA": true,
+     "OptionB": false,
+     "OptionC": "Depends upon the compiler",
+     "OptionD": "Varies",
+     "Correct Answer with Description": false
+    },
+    {
+     "Questions": "Which of the following is an improper declaration of an array?",
+     "OptionA": "int arrayname [size]; ",
+     "OptionB": "int arrayname [4]= {54,58,41,21}; ",
+     "OptionC": "int arrayname [] = (1,2,23,14,15); ",
+     "OptionD": "int arrayname [] = {1,2,23,14,15}; ",
+     "Correct Answer with Description": "int arrayname [] = (1,2,23,14,15); "
+    },
+    {
+     "Questions": "Which of the following is wrong in context of an array?",
+     "OptionA": "An array is a data structure.",
+     "OptionB": "An array stores the values at sequential addresses.",
+     "OptionC": "An array can store multiple data values of different data types.",
+     "OptionD": "The bounds of an array should be finite.",
+     "Correct Answer with Description": "An array can store multiple data values of different data types."
+    },
+    {
+     "Questions": "The indexes of an array begin from __________ .",
+     "OptionA": 0,
+     "OptionB": 1,
+     "OptionC": "As defined by the user",
+     "OptionD": "Undefined",
+     "Correct Answer with Description": 0
+    },
+    {
+     "Questions": "What is the complexity for the best case in linear search?",
+     "OptionA": "O(1)",
+     "OptionB": "O(n)",
+     "OptionC": "O(n2)",
+     "OptionD": "O(n+1)",
+     "Correct Answer with Description": "O(1)"
+    },
+    {
+     "Questions": "What is the correct index of the value 7 in the array : arr[5]={12,7,9,15,44};?",
+     "OptionA": 2,
+     "OptionB": 3,
+     "OptionC": 1,
+     "OptionD": 4,
+     "Correct Answer with Description": 1
+    },
+    {
+     "Questions": "How much memory will be allocated to the array:  int arr[15];?",
+     "OptionA": "30 bytes",
+     "OptionB": "28 bytes",
+     "OptionC": "15 bytes",
+     "OptionD": "60 bytes",
+     "Correct Answer with Description": "30 bytes"
+    },
+    {
+     "Questions": "Which of the following is an application of array?",
+     "OptionA": "Linear search",
+     "OptionB": "Bubble sort ",
+     "OptionC": "Insertion sort",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "All of the above"
+    },
+    {
+     "Questions": "In the array: int arr[4][7][2];,  how many rows are present?",
+     "OptionA": 4,
+     "OptionB": 7,
+     "OptionC": 2,
+     "OptionD": 28,
+     "Correct Answer with Description": 7
+    },
+    {
+     "Questions": "Which factor affects the limits related to the number of dimensions in an array?",
+     "OptionA": "Compiler type",
+     "OptionB": "Code editor",
+     "OptionC": "Console",
+     "OptionD": "IDE",
+     "Correct Answer with Description": "Compiler type"
+    },
+    {
+     "Questions": "What value will an array element hold if the array is only declared not initialized (consider that the program is tried to be executed)?",
+     "OptionA": "Garbage value",
+     "OptionB": "Zero",
+     "OptionC": "Code will show error on execution",
+     "OptionD": "Code will not even compile",
+     "Correct Answer with Description": "Garbage value"
+    },
+    {
+     "Questions": "Which of the following operations will not work in case of an array;  arr[i] where i signifies an array location (index)?",
+     "OptionA": "arr[i] + 1;",
+     "OptionB": "arr[i] * 2;",
+     "OptionC": "arr[] * 2;",
+     "OptionD": "All of the above will execute",
+     "Correct Answer with Description": "arr[] * 2;"
+    },
+    {
+     "Questions": "While passing an array as an argument, what is actually sent to the function?",
+     "OptionA": "Values of the elements",
+     "OptionB": "The whole array",
+     "OptionC": "Pointer to the array",
+     "OptionD": "Base address of the array",
+     "Correct Answer with Description": "Base address of the array"
+    },
+    {
+     "Questions": "Which symbol terminates a character array?",
+     "OptionA": "\/<",
+     "OptionB": "\/0",
+     "OptionC": "\\0",
+     "OptionD": "\\*",
+     "Correct Answer with Description": "\\0"
+    },
+    {
+     "Questions": "Which keyword is used to declare a string?",
+     "OptionA": "char",
+     "OptionB": "string",
+     "OptionC": "int ",
+     "OptionD": "float",
+     "Correct Answer with Description": "char"
+    },
+    {
+     "Questions": "Does strcat() adds NULL character?",
+     "OptionA": "Only if there is space ",
+     "OptionB": "Always",
+     "OptionC": "Depends on the standard",
+     "OptionD": "Depends on the compiler",
+     "Correct Answer with Description": "Always"
+    },
+    {
+     "Questions": "Which return type are used in string operations?",
+     "OptionA": "void only",
+     "OptionB": "void and (char*) only",
+     "OptionC": "void and int only",
+     "OptionD": "void, int and (char*) only",
+     "Correct Answer with Description": "void, int and (char*) only"
+    },
+    {
+     "Questions": "Which pre-defined function returns a pointer to the last occurance of a character in a string?",
+     "OptionA": "strchr(s, c);",
+     "OptionB": "strrchr(s, c);",
+     "OptionC": "strlchr(s, c);",
+     "OptionD": "strfchr(s, c);",
+     "Correct Answer with Description": "strrchr(s, c);"
+    },
+    {
+     "Questions": "Which of the functions compares 2 strings with case-insensitivity?",
+     "OptionA": "strcmp();",
+     "OptionB": "strcmpcase();",
+     "OptionC": "strchr();",
+     "OptionD": "strcasecmp();",
+     "Correct Answer with Description": "strcasecmp();"
+    },
+    {
+     "Questions": "String operations such as strcat(), strcmp(), strcpy() and strlen() heavily rely upon _________________________________ .",
+     "OptionA": "presence of NULL character",
+     "OptionB": "presence of new-line character",
+     "OptionC": "presence of any escape sequence",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "presence of NULL character"
+    },
+    {
+     "Questions": "If two strings are identical, strcmp() returns ___________ .",
+     "OptionA": 1,
+     "OptionB": 0,
+     "OptionC": -1,
+     "OptionD": true,
+     "Correct Answer with Description": 0
+    },
+    {
+     "Questions": "Which of the following functions is more appropriate for reading in a multi-word string?",
+     "OptionA": "scanf()",
+     "OptionB": "gets()",
+     "OptionC": "printf()",
+     "OptionD": "puts()",
+     "Correct Answer with Description": "gets()"
+    },
+    {
+     "Questions": "The function sprintf() works like printf(), but operates on _________________ .",
+     "OptionA": "data file",
+     "OptionB": "stderr",
+     "OptionC": "string",
+     "OptionD": "stdin",
+     "Correct Answer with Description": "string"
+    },
+    {
+     "Questions": "String concatenation means ________________________________ .",
+     "OptionA": "combining two strings",
+     "OptionB": "extracting a substring from a string",
+     "OptionC": "merging two strings",
+     "OptionD": "partitioning a string into two strings",
+     "Correct Answer with Description": "combining two strings"
+    },
+    {
+     "Questions": "Which of the following is a correct syntax for declaration of function?",
+     "OptionA": "return-type function-name(argument type);",
+     "OptionB": "return-type function-name(argument type){}",
+     "OptionC": "return-type(argument type)function-name;",
+     "OptionD": "Both A & B",
+     "Correct Answer with Description": "return-type function-name(argument type);"
+    },
+    {
+     "Questions": "Can we use a function as a parameter of another function? [ Eg: void wow(int func()) ] ",
+     "OptionA": "Yes, and we can use the function value conveniently.",
+     "OptionB": "No, C does not support it.",
+     "OptionC": " Yes, but we need to call the function again to get the value.",
+     "OptionD": "This case is compiler dependent.",
+     "Correct Answer with Description": "No, C does not support it."
+    },
+    {
+     "Questions": "Which is not a C keyword?",
+     "OptionA": "return",
+     "OptionB": "static",
+     "OptionC": "new",
+     "OptionD": "volatile",
+     "Correct Answer with Description": "new"
+    },
+    {
+     "Questions": "What is the return-type of the function sqrt()?",
+     "OptionA": "int",
+     "OptionB": "float",
+     "OptionC": "double",
+     "OptionD": "Depends on the data type of parameter",
+     "Correct Answer with Description": "double"
+    },
+    {
+     "Questions": " Which of the following function declarations are illegal?",
+     "OptionA": "double func();\n    int main(){}\n    double func(){}",
+     "OptionB": "double func(){};\n    int main(){}",
+     "OptionC": "int main()\n    {\n    double func();\n    }\n    double func(){\/\/statements}",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "None of the above"
+    },
+    {
+     "Questions": "What is the problem in the following declarations?\n    int func(int);\n    double func(int);\n    int func(float);",
+     "OptionA": " A function with the same name cannot have different signatures.",
+     "OptionB": "A function with the same name cannot have different return types.",
+     "OptionC": "A function with the same name cannot have different number of parameters.",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "All of the above"
+    },
+    {
+     "Questions": "Which of the following is a correct syntax to send an array as a parameter to function?",
+     "OptionA": "func(&array);",
+     "OptionB": "func(array);",
+     "OptionC": "Both A & B",
+     "OptionD": "func(*array);",
+     "Correct Answer with Description": "Both A & B"
+    },
+    {
+     "Questions": "Which of the following can never be sent by call-by-value?",
+     "OptionA": "Variable",
+     "OptionB": "Array",
+     "OptionC": "Structures",
+     "OptionD": "Both B & C",
+     "Correct Answer with Description": "Array "
+    },
+    {
+     "Questions": " Which type of variables can have the same name in different functions?",
+     "OptionA": "Global variables",
+     "OptionB": "Static variables",
+     "OptionC": "Function arguments",
+     "OptionD": "Both B & C",
+     "Correct Answer with Description": "Both B & C"
+    },
+    {
+     "Questions": "The maximum number of arguments that can be passed in a single function are_____________ .",
+     "OptionA": 127,
+     "OptionB": 253,
+     "OptionC": 361,
+     "OptionD": "There are no limits.",
+     "Correct Answer with Description": 253
+    },
+    {
+     "Questions": "Arguments that take input from the user before running a program are called ________________________________ .",
+     "OptionA": "main function arguments",
+     "OptionB": "main arguments",
+     "OptionC": "command-line arguments",
+     "OptionD": "parameterized arguments",
+     "Correct Answer with Description": "command-line arguments"
+    },
+    {
+     "Questions": "A structure is a _____________________ .",
+     "OptionA": "storage class",
+     "OptionB": "user defined data type",
+     "OptionC": "pre-defined datatype",
+     "OptionD": "a function",
+     "Correct Answer with Description": "user defined data type"
+    },
+    {
+     "Questions": "A structure can hold ___________________________________ .",
+     "OptionA": "multiple values from multiple datatypes",
+     "OptionB": "multiple values of a single datatype",
+     "OptionC": "only other user-defined data types",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "multiple values from multiple datatypes"
+    },
+    {
+     "Questions": "A structure is defined by using the keyword ________________ .",
+     "OptionA": "struct",
+     "OptionB": "structure",
+     "OptionC": "Struct",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "struct"
+    },
+    {
+     "Questions": "Which symbol is used to mark the end of a structure declaration?",
+     "OptionA": ":",
+     "OptionB": ";",
+     "OptionC": "#",
+     "OptionD": "?",
+     "Correct Answer with Description": ";"
+    },
+    {
+     "Questions": "Which operator is used to access the elements of a structure?",
+     "OptionA": ".",
+     "OptionB": "&",
+     "OptionC": "#",
+     "OptionD": ";",
+     "Correct Answer with Description": ". (dot operator)"
+    },
+    {
+     "Questions": "Which of the following can be used to pass a structure to a function?",
+     "OptionA": "function name (struct structure_name)",
+     "OptionB": "function name (struct structure_variable)",
+     "OptionC": "function name (structure_variable)",
+     "OptionD": "function name (structure_name)",
+     "Correct Answer with Description": "function name (structure_variable)"
+    },
+    {
+     "Questions": "How much memory will be allocated to Structure:           struct Structure_name { int var1, var2, var3;  float var5; char var7: };?",
+     "OptionA": "11 bytes",
+     "OptionB": "7 bytes",
+     "OptionC": "4 bytes",
+     "OptionD": "12 bytes",
+     "Correct Answer with Description": "11 bytes"
+    },
+    {
+     "Questions": "How much memory will be allocated to Union:           union union_name { int var1, var2, var3;  float var5; char var7: };?",
+     "OptionA": "11 bytes",
+     "OptionB": "7 bytes",
+     "OptionC": "4 bytes",
+     "OptionD": "12 bytes",
+     "Correct Answer with Description": "4 bytes"
+    },
+    {
+     "Questions": "Bit field is used for ______________________________ .",
+     "OptionA": "saving extra allocated space",
+     "OptionB": "increasing the total allocated space",
+     "OptionC": "deallocating the space",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "saving extra allocated space"
+    },
+    {
+     "Questions": "Which feature of the C programming allows the programmer to assign new names to the already existing data types?",
+     "OptionA": "Structure",
+     "OptionB": "typedef",
+     "OptionC": "Macro",
+     "OptionD": "Bitfield",
+     "Correct Answer with Description": "typedef"
+    },
+    {
+     "Questions": "Which member of the union will be active after the execution of this command—union temp { int a; float b; char c; };   union temp s = {1,2.5,’A'};?",
+     "OptionA": "Variable a",
+     "OptionB": "Variable c",
+     "OptionC": "Variable b",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "Variable a"
+    },
+    {
+     "Questions": "Choose the most appropriate comment for the following pointer declaration:\n    int *ptr, p",
+     "OptionA": "ptr is a pointer to integer; p is not a pointer.",
+     "OptionB": "Both ptr and p are pointers to integer.",
+     "OptionC": "ptr is a pointer to integer; p may or may not be.",
+     "OptionD": "ptr and p are not pointers to integer.",
+     "Correct Answer with Description": "ptr is a pointer to integer; p is not a pointer."
+    },
+    {
+     "Questions": "Choose the most appropriate comment for the following:\n    const int *ptr;",
+     "OptionA": "You cannot change the value pointed by ptr.",
+     "OptionB": "You cannot change the pointer ptr itself.",
+     "OptionC": "Both A & B",
+     "OptionD": "You can change the pointer as well as the value pointed by it.",
+     "Correct Answer with Description": "You cannot change the value pointed by ptr."
+    },
+    {
+     "Questions": "Which is an indirection operator?",
+     "OptionA": "&",
+     "OptionB": "*",
+     "OptionC": "->'",
+     "OptionD": ".",
+     "Correct Answer with Description": "*"
+    },
+    {
+     "Questions": "Which of the following does not initialize ptr to null?",
+     "OptionA": "int *ptr=&a;",
+     "OptionB": "int *ptr=a-&a;",
+     "OptionC": "int *ptr=a-a;",
+     "OptionD": "All of the above",
+     "Correct Answer with Description": "int *ptr=&a;"
+    },
+    {
+     "Questions": "Prior to using a pointer variable, it should be _________________ .",
+     "OptionA": "declared",
+     "OptionB": "initialized",
+     "OptionC": "both declared and initialized",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "both declared and initialized"
+    },
+    {
+     "Questions": "Which of the following is the correct way of declaring a float pointer?",
+     "OptionA": "float ptr;",
+     "OptionB": "float *ptr;",
+     "OptionC": "*float ptr;",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "float *ptr;"
+    },
+    {
+     "Questions": "How many pointer (*) does C have against a pointer variable declaration?",
+     "OptionA": 7,
+     "OptionB": 127,
+     "OptionC": 255,
+     "OptionD": "No limits",
+     "Correct Answer with Description": "No limits"
+    },
+    {
+     "Questions": "Which of the following declarations throws run-time error?",
+     "OptionA": "int **c=&c;",
+     "OptionB": "int **c=&*c;",
+     "OptionC": "int **c=**c;",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "None of the above"
+    },
+    {
+     "Questions": "What is the output of this C code?         \n#include <stdio.h>\n    void main()\n    {\n        int a[3] = {1, 2, 3};\n        int *p = a;\n        int *r = &p;\n        printf(\"%d\", (**r));\n    }",
+     "OptionA": 1,
+     "OptionB": "Compile time error",
+     "OptionC": "Address of a",
+     "OptionD": "Junk value",
+     "Correct Answer with Description": "Address of a"
+    },
+    {
+     "Questions": "Choose the most appropriate comment on the output of this C code? \n#include <stdio.h>\n    int main()\n    {\n        char *str = \"This\" \/\/Line 1\n        char *ptr = \"Program\\n\"; \/\/Line 2\n        str = ptr; \/\/Line 3\n        printf(\"%s, %s\\n\", str, ptr); \/\/Line 4\n    }",
+     "OptionA": "Memory holding “this” is cleared at line 3",
+     "OptionB": " Memory holding “this” loses its reference at line 3",
+     "OptionC": "You cannot assign pointer as in Line 3",
+     "OptionD": " Output will be This, Program",
+     "Correct Answer with Description": " Memory holding “this” loses its reference at line 3"
+    },
+    {
+     "Questions": "The syntax for constant pointer to address (i.e., fixed pointer address) is ____________________ .",
+     "OptionA": "const <type> * <name>",
+     "OptionB": "<type> * const <name>",
+     "OptionC": "<type> const * <name>",
+     "OptionD": "Both A & C",
+     "Correct Answer with Description": "<type> * const <name>"
+    },
+    {
+     "Questions": "What would happen if you use #include while creating a file stdio.h?",
+     "OptionA": "The predefined library file will be selected.",
+     "OptionB": "The compiler won’t accept the program.",
+     "OptionC": "The user-defined library file will be selected.",
+     "OptionD": "Both the files will be included.",
+     "Correct Answer with Description": "The user-defined library file will be selected."
+    },
+    {
+     "Questions": "What is the sequence for preprocessor within <> ?",
+     "OptionA": "The predefined location then the current directory.",
+     "OptionB": "The current directory then the predefined location.",
+     "OptionC": "The predefined location only.",
+     "OptionD": "The current directory location.",
+     "Correct Answer with Description": "The predefined location then the current directory."
+    },
+    {
+     "Questions": "Can you include function definition in header files?",
+     "OptionA": "Yes",
+     "OptionB": "No",
+     "OptionC": "Depends on compiler",
+     "OptionD": "Depends on standard",
+     "Correct Answer with Description": "Yes"
+    },
+    {
+     "Questions": "When a file name is enclosed in double quotation marks, ______________________________ .",
+     "OptionA": "The preprocessor treats it as a user-defined file.",
+     "OptionB": "The preprocessor treats it as a system-defined file.",
+     "OptionC": "Both A & B",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "The preprocessor treats it as a user-defined file."
+    },
+    {
+     "Questions": "When a file name is enclosed in angle brackets, ____________________________ .",
+     "OptionA": "The preprocessor treats it as a user-defined file.",
+     "OptionB": " The preprocessor treats it as a system-defined file.",
+     "OptionC": "Both A & B",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "The preprocessor treats it as a system-defined file."
+    },
+    {
+     "Questions": "What are the first and second arguments of fopen()?",
+     "OptionA": "A character string (containing the name of the file) and the mode.",
+     "OptionB": "A character string (containing the name of the user) and the mode.",
+     "OptionC": " A character string (containing file poniter) and the mode.",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "A character string (containing the name of the file) and the mode."
+    },
+    {
+     "Questions": "If there is any error while opening a file, what will fopen return?",
+     "OptionA": "nothing",
+     "OptionB": "EOF",
+     "OptionC": "NULL",
+     "OptionD": "Depends on compiler",
+     "Correct Answer with Description": "NULL"
+    },
+    {
+     "Questions": "FILE is __________________ .",
+     "OptionA": "int type",
+     "OptionB": "char *type",
+     "OptionC": "struct type",
+     "OptionD": "None of the above",
+     "Correct Answer with Description": "struct type"
+    }
+   ]
