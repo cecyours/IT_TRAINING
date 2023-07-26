@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        div{
+            background: red;
+            
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+        <button id="btnAdd" class="btn" style="font-size: 100px;">+</button>
+        <hr>
+        <span style="font-size: 50px;" id="counter">0</span>
+
+    </section>
+</body>
+
+</html>
+
+<script src="./src/main-jq.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $("#btnAdd").click(function () {
+
+            var x = $("#counter").text().trim()
+            x++
+            $("#counter").text(x)
+        })
+
+        $("#btnAdd").dblclick(function(){
+            $("#counter").css("color","red")
+        })
+
+        $("div").mouseenter(function(){
+            $("div").css({"border-bottom-left-radius":"50px"})
+            $("div").css({"border-top-right-radius":"50px"})
+            $(this).css({"border-radius":"50%","background":"green"})
+        })
+        $("div").mouseleave(function(){
+
+            $(this).css({"border-radius":"0%","background":"red"})
+            
+        })
+    })
+</script>

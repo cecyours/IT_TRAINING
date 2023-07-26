@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+    <style>
+        * {
+
+            font-size: 30px;
+        }
+
+        div {
+            background: red;
+
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="home">
+    <section style="margin: 100px;">
+
+        <input type="text" class="form-control">
+        <span>Hii</span>
+        <div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script src="./src/main-jq.js">
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("input").keydown(function () {
+            $("div").css({ "background": "blue" })
+            $("span").text("you are typing..")
+        })
+        $("input").keypress(function () {
+            $("span").text("you are typing..")
+            $("div").css({ "background": "black" })
+        })
+        $("input").keyup(function () {
+            setTimeout(() => {
+
+                $("span").text("you stopped")
+
+                $("div").css({ "background": "green" })
+            }, 1000);
+        })
+    })
+</script>
