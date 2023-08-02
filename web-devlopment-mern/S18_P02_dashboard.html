@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage with Sidebar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        /* Styling for the sidebar */
+        .sidebar {
+            width: 250px; /* Set the width of the sidebar */
+            background-color: #f1f1f1; /* Background color of the sidebar */
+            padding: 10px; /* Padding inside the sidebar */
+            float: left; /* Float the sidebar to the left to make space for the main content */
+            height: 100vh;
+        }
+
+        /* Styling for the main content area */
+        .main-content {
+            margin-left: 270px; /* Set the margin to create space for the sidebar */
+            padding: 20px; /* Padding inside the main content */
+        }
+        
+        li{
+            list-style-type: none;
+            padding: 10px;
+            transition: ease-in 0.2s;
+        }
+
+        .active{
+            background-color: green;
+            border-radius: 10px;
+            color: whitesmoke;
+        }
+        li:hover{
+            background: white;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+       
+            <li class="demo" id="btnHome">Home</li> 
+            <li class="demo" id="btnAbout">About</li> 
+            <li class="demo" id="btnContact">Contact</li> 
+         
+    </div>
+    <div class="main-content">
+        <h1>Main Content</h1>
+        <p>This is the main content of the webpage.</p>
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $(".demo").click()
+        $("#btnHome").click(function(){
+            $(".demo").removeClass("active")
+            $(this).addClass("active")
+            $.ajax({
+                url:'./S18_P02_home.html',
+                success:function(response){
+                    $(".main-content").empty()
+                    $(".main-content").append(response)
+
+                }
+            })
+        })
+
+        $("#btnContact").click(function(){
+            $(".demo").removeClass("active")
+            $(this).addClass("active")
+
+            $.ajax({
+
+                url:'./S18_P02_contact.html',
+                success:function(response){
+                    $(".main-content").empty()
+                    $(".main-content").append(response)
+
+                }
+            })
+        })
+
+        $("#btnAbout").click(function(){
+            $(".demo").removeClass("active")
+            $(this).addClass("active")
+
+            $.ajax({
+                url:'./S18_P02_About.html',
+                success:function(response){
+                    $(".main-content").empty()
+                    $(".main-content").append(response)
+
+                }
+            })
+        })
+    })
+</script>

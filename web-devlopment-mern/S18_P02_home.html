@@ -1,0 +1,3 @@
+<div>
+    Home page
+</div>

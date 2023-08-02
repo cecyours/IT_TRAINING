@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+        <style>
+            section{
+                margin: 100px;
+            }
+            #output{
+                color:red;
+                font-size: 39px;
+            }
+        </style>
+</head>
+
+<body>
+
+    <section>
+        <button class="btn btn-primary" id="btnGetPage">Get Page</button>
+        <button class="btn btn-primary" id="btnGetName">Get Name</button>
+
+        <div id="output"></div>
+    </section>
+</body>
+
+</html>
+
+    <script>
+        $(document).ready(function(){
+            
+            $("#btnGetName").click(()=>{
+                $.ajax({
+                    url:'./S18_P01_ajax_json.json',
+                    dataType:'json',
+                    success:function(response){
+
+                        // console.log(response.userName,response.marks)
+                    $("#output").append(response.userName)
+                    }
+                })
+            })
+
+            $("#btnGetPage").click(()=>{
+
+                $.ajax({
+                   url:'./S18_P01_ajax.html',
+                    
+                   success:function(kuldeep){
+
+                       $("#output").empty();
+                       $("#output").append(kuldeep)
+
+                   },
+
+                   error:function(xhr,str,errorMessage)
+                   {
+                        alert("Hello Error")
+                   }
+                })
+            })
+        })
+    </script>
+<!-- 
+    ajax -> request -> index.html -> data ->response(HTML,json)  
+
+
+-->
