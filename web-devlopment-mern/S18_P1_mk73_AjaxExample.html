@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main-jq.js"></script>
+    <script src="src/main.js"></script>
+
+    <style>
+        section{
+            margin: 100px;
+        }
+
+        #output{
+            color: red;
+            font-size: 39px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button class="btn btn-primary" id="btnGetPage">Get Page</button>
+        <button class="btn btn-primary" id="btnGetName">Get Name</button>
+
+        <div id="output"></div>
+    </section>
+</body>
+</html>
+
+<script>
+    $(document).ready(()=>{
+        $("#btnGetName").click(() => {
+            $.ajax({
+                url:'./S18_P1_mk73_ajax_json.json',
+                success:function(response){
+                    $("#output").append(response.userName)
+                }
+            })
+        })
+
+        $("#btnGetPage").click(()=>{
+            $.ajax({
+                url : './S18_P1_mk73_ajax.html',
+                success : function(xyz) {
+                    $("#output").empty();
+                    $("#output").append(xyz)
+                },
+
+                error:function(xhr,str,errorMessage)
+                {
+                    alert("Hello there are an error ")
+                }
+            })
+        })
+
+    })
+</script>

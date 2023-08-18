@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main-jq.js"></script>
+    <script src="src/main.js"></script>
+    <style>
+        .sidebar{
+            width: 250px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            float: left;
+            height: 100vh;
+        }
+        .main-content{
+            margin-left: 270px;
+            padding: 20px;
+        }
+        li{
+            list-style-type: none;
+            padding: 10px 20px;
+            transition: ease-in 0.2s;
+        }
+        .active{
+            background-color: green;
+            border-radius: 10px;
+            color: whitesmoke;
+        }
+        li:hover{
+            background:white;
+            letter-spacing: 5px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3 style="text-align: center;font-family: 'Times New Roman';">Menu</h3> <hr>
+        <li class="demo" id="btnHome">Home</li>
+        <li class="demo" id="btnAbout">About</li>
+        <li class="demo" id="btnContact">Contact</li>
+        <li class="demo" id="btnLogIn">LOG IN</li>
+        <li class="demo" id="btnSignUp">SIGN UP</li>
+    </div>
+    <div class="main-content">
+        <h1>Main Content</h1>
+        <p>This is main content of the webpage.</p>
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(() => {
+         $("#btnHome").click(()=> {
+            $("#btnHome").click(() => {
+                $(".demo").removeClass("active")
+                $(this).addClass("active")
+                $.ajax({
+                    url : './S18_P2_mk73_Home.html',
+                    success : function(response) {
+                        $(".main-content").empty()
+                        $(".main-content").append(response)
+                    }
+                })
+            })
+
+            $("#btnContact").click(() => {
+                $(".demo").removeClass("active")
+                $(this).addClass("active")
+                $.ajax({
+                    url : './S18_P2_mk73_Contact.html',
+                    success : function(response) {
+                        $(".main-content").empty()
+                        $(".main-content").append(response)
+                    }
+                })
+            })
+
+            $("#btnAbout").click(() => {
+                $(".demo").removeClass("active")
+                $(this).addClass("active")
+                $.ajax({
+                    url : './S18_P2_mk73_About.html',
+                    success : function(response) {
+                        $(".main-content").empty()
+                        $(".main-content").append(response)
+                    }
+                })
+            })
+
+            $("#btnSignUp").click(() => {
+                $(".demo").removeClass("active")
+                $(this).addClass("active")
+                $.ajax({
+                    url : './S18_P2_mk73_SignUp.html',
+                    success : function(response) {
+                        $(".main-content").empty()
+                        $(".main-content").append(response)
+                    }
+                })
+            })
+
+            $("#btnLogIn").click(() => {
+                $(".demo").removeClass("active")
+                $(this).addClass("active")
+                $.ajax({
+                    url : './S18_P2_mk73_LogIn.html',
+                    success : function(response) {
+                        $(".main-content").empty()
+                        $(".main-content").append(response)
+                    }
+                })
+            })
+         })
+    })
+</script>
